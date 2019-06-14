@@ -858,6 +858,7 @@
             version:                  fabric.version,
             originX:                  this.originX,
             originY:                  this.originY,
+            ext:                      this.ext ? this.ext : null,
             left:                     toFixed(this.left, NUM_FRACTION_DIGITS),
             top:                      toFixed(this.top, NUM_FRACTION_DIGITS),
             width:                    toFixed(this.width, NUM_FRACTION_DIGITS),
@@ -884,6 +885,7 @@
             paintFirst:               this.paintFirst,
             globalCompositeOperation: this.globalCompositeOperation,
             transformMatrix:          this.transformMatrix ? this.transformMatrix.concat() : null,
+            transparentCorners:       this.transparentCorners,
             skewX:                    toFixed(this.skewX, NUM_FRACTION_DIGITS),
             skewY:                    toFixed(this.skewY, NUM_FRACTION_DIGITS),
           };
