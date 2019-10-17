@@ -11765,7 +11765,7 @@ fabric.PatternBrush = fabric.util.createClass(fabric.PencilBrush, /** @lends fab
         this._setCursorFromEvent(e, target);
         this._fireOverOutEvents(target, e);
       }
-      else {
+      else if (this.canMove) {
         this._transformObject(e);
       }
       this._handleEvent(e, 'move');
